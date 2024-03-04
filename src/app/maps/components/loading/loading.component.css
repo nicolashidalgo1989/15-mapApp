@@ -1,0 +1,12 @@
+.loading-map{
+  align-items: center;
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh !important;
+  justify-content: center;
+  right:0;
+  top:0;
+  width: 100vw !important;
+}
