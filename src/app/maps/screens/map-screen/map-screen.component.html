@@ -1,7 +1,8 @@
 @if(!isUserLocationReady ){
   <app-loading />
 } @else {
-  <app-map-view *ngIf="isUserLocationReady"/>
+  <app-map-view />
   <app-btn-my-location />
+  <app-search-bar />
 }
 <app-angular-logo />
