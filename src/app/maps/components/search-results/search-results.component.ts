@@ -34,9 +34,12 @@ export class SearchResultsComponent {
 
     if(!this.placesService.userLocation) throw new Error('No existe el userlocation');
 
+    this.placesService.deletePlaces();
+
     const start = this.placesService.userLocation;
     const end = place.center as [ number, number];
     this.mapService.getrouteBetweenTwoPoints( start, end );
 
   }
+
 }
